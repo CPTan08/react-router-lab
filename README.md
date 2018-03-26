@@ -22,15 +22,15 @@ configure({ adapter: new Adapter() });
 
 ### Tasks
 
-##### MyApp
-- Create a `MyApp` component, which simply displays:
+##### MyRouter
+- Create a `MyRouter` component, which simply displays:
 ```html
 <div>
   pending implementation
 </div>
 ```
-- `MyApp` is where you will place all of your Route and Links components
-- Place `MyApp` inside `App.js#render()`  
+- `MyRouter` is where you will place all of your Route and Links components (or any components that contain Route and Links components)
+- Place `MyRouter` inside `App.js#render()`  
 
 ##### NavLinks
 - Create a `NavLinks` component, which simply displays:
@@ -43,7 +43,7 @@ configure({ adapter: new Adapter() });
 </div>
 ```
 
-- Place NavLinks in `MyApp`
+- Place NavLinks in `MyRouter`
 
 ##### HomePage
 - Create a component for `HomePage.js`, which simply displays:
@@ -51,7 +51,7 @@ configure({ adapter: new Adapter() });
 ```html
 <h1>This is your home page<h1>
 ```
-- Add a route to `HomePage` component in `MyApp.js`
+- Add a route to `HomePage` component in `MyRouter.js`
   - hint: you will need to `import {BrowserRouter, Route} from 'react-router-dom'`
 
 ##### Repeat for TwitterFeed component 
@@ -59,20 +59,18 @@ configure({ adapter: new Adapter() });
 ##### Repeat for TacosFeed component
 
 ##### Route params for TacosFeed
-- Create `TacoDetail` component and add a route to it in `MyApp.js`
+- Create a `TacoDetail` component and add a route to it in `MyRouter.js`
 - This component should simply display:
 ```jsx
 <div>
-  this is the detailed page for taco number {props.match.params.id}
+  detailed page for taco with param {props.match.params.id}
 </div>
 ```
 - Any request for localhost:3000/tacos/:id should dipslay this component
 
 ##### Add a Redirect component
-- Redirect requests for 'tacos/42' to `SpecialTacoPage` 
-(you have to define `SpecialTacoPage` component, of course)
+- Redirect requests for 'tacos/42' to `localhost:3000/specialTacoPage` (you have to define `SpecialTacoPage` component and a Route for this path and component, of course!)
 
 
 ### Bonus
-
 - Add a `Switch` component to your application (see https://css-tricks.com/react-router-4/#article-header-id-2)
