@@ -50,7 +50,7 @@ configure({ adapter: new Adapter() });
 ```html
 <h1>This is your home page<h1>
 ```
-- Add a route to `HomePage` component in `App.js`
+- Add a route to `HomePage` component in `MyApp.js`
   - hint: you will need to `import {BrowserRouter, Route} from 'react-router-dom'`
 
 ##### Repeat for TwitterFeed component 
