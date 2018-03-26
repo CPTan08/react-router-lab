@@ -37,9 +37,9 @@ configure({ adapter: new Adapter() });
 
 ```html
 <div>
-  <Link href="/">Home Page </Link>
-  <Link href="/tacos">Tacos Feed </Link>
-  <Link href="/twitter">Twitter Feed </Link>
+  <Link to="/">Home Page </Link>
+  <Link to="/tacos">Tacos Feed </Link>
+  <Link to="/twitter">Twitter Feed </Link>
 </div>
 ```
 
