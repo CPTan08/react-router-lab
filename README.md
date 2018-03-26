@@ -3,6 +3,7 @@
 In this lab, use React Router to create a simple React application that supports URL routing. In this lab, we will focus on how to use React Router, and hence our components will simply comprise just `h1`, `div` and/or `a` tags.
 
 ### Getting started
+- There's no need to fork and clone this repo. Simply follow the steps below and create a new project on GitHub.com, and add it as a remote in your app directory
 - Create react app: `create-react-app my-app-name`
 - Install dependencies:
   - `yarn add react-router-dom`
