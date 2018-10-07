@@ -4,23 +4,15 @@ In this lab, use React Router to create a simple React application that supports
 
 ### Getting started
 - There's no need to fork and clone this repo. Simply follow the steps below and create a new project on GitHub.com, and add it as a remote in your app directory
-- Create react app: `create-react-app my-app-name`
+- Create react app: `npx create-react-app my-app-name`
 - Install dependencies:
-  - `yarn add react-router-dom`
-  - `yarn add enzyme enzyme-adapter-react-16 --dev`
-- Remove boilerplate code in `App.js#render()`
-- Create enzyme config file in `src/setupTests.js`
-
-```js
-import { configure } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
-configure({ adapter: new Adapter() });
-```
-- Smoke test:
-  - `yarn test` - test should still pass
-  - `yarn start` - localhost:3000 should not show any errors
+  - `npm install react-router-dom`
+- Sart webpack dev server:
+  - `npm run start` - localhost:3000 should not show any errors
 
 ### Tasks
+
+Remove boilerplate code in `App.js#render()`
 
 ##### MyRouter
 - Create a `MyRouter` component, which simply displays:
